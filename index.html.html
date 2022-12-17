@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/ex1.css" rel="stylesheet" />
+    <title>Cerere concediu de odihna</title>
+  </head>
+  <bodystyle="font-family: Bahnschrift; font-size: 2,5 rem;">
+    <h1>Cerere concediu de odihna</h1>
+    <p>Data solicitarii: <script>
+      var today = new Date();
+      var dd = String(today.getDate()).padStart(2, '0');
+      var mm = String(today.getMonth() + 1).padStart(2, '0');
+      var yyyy = today.getFullYear();
+      today = mm + '/' + dd + '/' + yyyy;
+      document.write(today);
+    </script></p>
+    <hr>
+   
+  
+<!-- PASUL 1: Selectare angajat   -->
+<h2 style="background-color: #4a4e69; color: #fffffffc">ANGAJAT:</h2>
+<form action="/action_page.php">
+  <fieldset style="background-color: #e7d8c9">
+    <br>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="angajat">1. <strong>Nicușor Nicolae</strong> --- CIM nr. 4 din 01.01.2022</label><br><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="angajat">2. <strong>Stancu Ionuț-Aurel</strong> --- CIM nr. 4 din 01.01.2022</label><br><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="angajat">3. <strong>Pană Veronica-Elena-Ramona</strong> --- CIM nr. 4 din 01.01.2022</label><br><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="angajat">4. <strong>Enculescu Ionut-Cosmin</strong> --- CIM nr. 5 din 01.01.2022</label><br><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="angajat">5. <strong>Voicu Marian-Valentin</strong> --- CIM nr. 5 din 01.01.2022</label><br><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="angajat">6. <strong>Vîlcu Gheorghe</strong> --- CIM nr. 5 din 01.01.2022</label><br><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="angajat">7. <strong>Ghinea Iulian</strong> --- CIM nr. 5 din 01.01.2022</label><br><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="angajat">8. <strong>Antofi Ramona</strong> --- CIM nr. 5 din 01.01.2022</label><br><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="angajat">9. <strong>Ghica Ionica</strong> --- CIM nr. 5 din 01.01.2022</label><br><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="angajat">10. <strong>Oprea Iulia-Andreea</strong> --- CIM nr. 5 din 01.01.2022</label><br><br>
+  </fieldset>
+</form> 
+<br>
+
+   
+<br>
+<!-- PASUL 2: Perioada   -->
+    <h2 style="background-color: #4a4e69; color: #fffffffc">PERIOADA:</h2>
+    <form>
+        <fieldset style="background-color: #e7d8c9">
+          <label for="start-date">Prima zi de CO:</label><br>
+          <input type="date" id="start-date" name="start-date"><br><br>
+          <label for="end-date">Ultima zi de CO:</label><br>
+          <input type="date" id="end-date" name="end-date"><br><br>
+          <label for="days-requested">Numar zile CO solicitate:</label><br>
+          <input type="number" id="days-requested" name="days-requested"><br><br>
+        </fieldset>
+    </form> 
+    
+    <!-- PASUL 8: Mai este ceva de adăugat?  -->    
+<h2 style="background-color: #4a4e69; color: #fffffffc">Mai este ceva de adăugat?</h2>
+<form action="/action_page.php">
+  <fieldset style="background-color: #e7d8c9">
+    <legend>Trimite un mesaj completând cămpul de mai jos:</legend><br>
+      <textarea style="color: #b1b1b1" name="message" rows="10" cols="30" maxlength="1000" style="width:500px; height:200px;">Scrie aici:
+      </textarea>
+        <br><br>
+      <input type="submit" href="mailto:andr.oprea@gmail.com">
+  </fieldset>
+</form>
+
+  </bodystyle>
+</html>
